@@ -93,23 +93,7 @@ import 'vuetify/dist/vuetify.min.css'
 })
 export default class IndexPage extends Vue {
   queryResult = { geschenke: [], totalCount: 0 }
-  geschenke: Geschenk[] = [
-    {
-      name: 'Rosenstrauß',
-      internalID: 'rosenstrauß',
-      details:
-        'Das klassiker Geschenk für den Muttertag. Mit einen Rosenstrauß kann man nichts falsch machen und macht jeden Empfänger glücklich.',
-      vorschauBild: 'https://loremflickr.com/800/400/rose',
-      anlass: Anlass.Muttertag,
-      preis: 5.0,
-      empfaenger: Empfaenger.Erwachsener,
-      verfeinerung: EmpfaengerVerfeinerung.Weiblich,
-      verhaeltnis: Verhaeltnis.Mutter,
-      beliebtheit: 5.0,
-      anzahlBewertungen: 100,
-      tags: ['Blumen', 'Strauß', 'Mutter'],
-    },
-  ]
+  geschenke: Geschenk[] = []
 
   currentFilters = {
     ascending: false,
@@ -124,8 +108,25 @@ export default class IndexPage extends Vue {
 
   searchDebounce: ReturnType<typeof setTimeout> = setTimeout(() => '', 10)
 
-  async asyncData({ $axios }: Context) {
-    // Fetch Data
+  async asyncData({ $axios, $content }: Context) {
+    let totalCount = 1
+    const allEntries = await $content('', { deep: true })
+      .only('internalID')
+      .fetch()
+    if (Array.isArray(allEntries)) {
+      totalCount = allEntries.length
+    }
+    const geschenke = await $content('', { deep: true })
+      .limit(25)
+      .fetch<Geschenk>()
+
+    return {
+      queryResult: {
+        geschenke,
+        totalCount,
+      },
+      geschenke,
+    }
   }
 
   // Debounce the search

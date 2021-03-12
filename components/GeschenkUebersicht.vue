@@ -15,16 +15,17 @@
       nuxt
       hover
       outlined
-      :to="'/show/' + geschenk.internalID"
+      :to="'/info/' + geschenk.internalID"
+      style="overflow: hidden"
     >
       <v-row no-gutters>
         <v-img
-          :src="geschenk.vorschauBild"
+          :src="geschenk.vorschauBilder"
           class="rounded-lg grey lighten-1 align-end elevation-2"
           height="280px"
           width="100%"
           :gradient="
-            geschenk.vorschauBild.length === 0
+            geschenk.vorschauBilder.length === 0
               ? 'to top right, rgba(90,109,83,.33), rgba(248,255,247,.7)'
               : ''
           "
@@ -101,25 +102,18 @@
           </v-card-text>
 
           <v-divider class="mx-4"></v-divider>
-          <v-card-text class="pt-0">
-            <v-row
-              no-gutters
-              class="py-1"
-              align="center"
-              align-content="center"
-            >
-              <div class="pt-1">Kategorie:</div>
-            </v-row>
-            <v-row
-              no-gutters
-              class="py-1"
-              align="center"
-              align-content="center"
-            >
-              <div class="pt-1">Kosten: {{ geschenk.preis.toFixed(2) }}€</div>
-              <div></div>
-            </v-row>
-          </v-card-text>
+          <v-card-title
+            class="pa-0 text-center rounded-b"
+            :style="
+              $vuetify.theme.dark
+                ? 'background-color: rgba(0, 0, 0, 0.1)'
+                : 'background-color: rgba(0, 0, 0, 0.02)'
+            "
+          >
+            <div class="py-1 text-center" style="width: 100%">
+              Kosten: {{ geschenk.preis.toFixed(2) }}€
+            </div>
+          </v-card-title>
         </v-col>
       </v-row>
     </v-card>

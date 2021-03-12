@@ -1,0 +1,26 @@
+---
+name: Rosenstrauß
+internalID: rosenstrauß
+details: Das klassische Geschenk für den Muttertag. Mit einen Rosenstrauß kann man
+  nichts falsch machen und macht jeden Empfänger glücklich.
+vorschauBilder:
+  - https://loremflickr.com/800/400/rose
+  - https://loremflickr.com/800/400/roses
+anlass:
+  - Muttertag
+preis: 5
+empfaengerAlter: 30-44
+verfeinerung: Weiblich
+verhaeltnis: Mutter
+beliebtheit: 5
+anzahlBewertungen: 100
+attribute:
+  lustig: 0
+  romantisch: 0.8
+  edel: 0.1
+  besonders: 0
+  nuetzlich: 0
+tags:
+  - Blumen
+  - Strauß
+  - Mutter

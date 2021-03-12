@@ -33,6 +33,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'cookie-universal-nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -50,6 +51,8 @@ export default {
       lang: 'en',
     },
   },
+
+  router: { middleware: 'theme' },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},

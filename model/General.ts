@@ -1,57 +1,69 @@
 export enum Anlass {
-  'Sonstiges',
-  'Geburtstag',
-  'Weihnachten',
-  'Promotion',
-  'Hochzeit',
-  'Schulabschluss',
-  'Valentinstag',
-  'Muttertag',
-  'Zwischendurch',
-  'Jubiläum',
-  'Ostern',
-  'Geburt',
-  'Jahrestag',
+  'Sonstiges' = 'Sonstiges',
+  'Geburtstag' = 'Geburtstag',
+  'Weihnachten' = 'Weihnachten',
+  'Promotion' = 'Promotion',
+  'Hochzeit' = 'Hochzeit',
+  'Schulabschluss' = 'Schulabschluss',
+  'Valentinstag' = 'Valentinstag',
+  'Muttertag' = 'Muttertag',
+  'Zwischendurch' = 'Zwischendurch',
+  'Jubilaeum' = 'Jubiläum',
+  'Ostern' = 'Ostern',
+  'Geburt' = 'Geburt',
+  'Jahrestag' = 'Jahrestag',
+  'Schulanfang' = 'Schulanfang',
+  'Konfirmation' = 'Konfirmation',
+  'Fuehrerschein' = 'Führerschein',
 }
 
 export enum Empfaenger {
-  Baby,
-  Kleinkind,
-  Jugendlicher,
-  JungerErwachsener,
-  Erwachsener,
-  Erwachsener45,
-  Erwachsener60,
+  Baby = 'Baby',
+  Kleinkind = 'Kleinkind',
+  Jugendlicher = 'Jugendlicher',
+  JungerErwachsener = '20-29',
+  Erwachsener = '30-44',
+  Erwachsener45 = '45-59',
+  Erwachsener60 = '60-X',
 }
 
 export enum EmpfaengerVerfeinerung {
-  Maennlich,
-  Weiblich,
+  Maennlich = 'Männlich',
+  Weiblich = 'Weiblich',
 }
 
 export enum Verhaeltnis {
-  Freund,
-  Paar,
-  Bekannter,
-  Schwager,
-  Mutter,
-  Vater,
-  Eltern,
-  Großeltern,
+  Freund = 'Freund',
+  Paar = 'Paar',
+  Bekannter = 'Bekannter',
+  Schwager = 'Schwager',
+  Mutter = 'Mutter',
+  Vater = 'Vater',
+  Eltern = 'Eltern',
+  Großeltern = 'Großeltern',
+}
+
+interface Attribute {
+  romantisch: number
+  edel: number
+  nuetzlich: number
+  lustig: number
+  besonders: number
 }
 
 export interface Geschenk {
   name: string
   internalID: string
   details: string
-  vorschauBild: string
-  anlass: Anlass
+  vorschauBilder: string[]
+  anlass: Anlass[]
   preis: number | null
   schwierigkeit?: number
-  empfaenger?: Empfaenger
+  empfaengerAlter?: Empfaenger
   verfeinerung?: EmpfaengerVerfeinerung
   verhaeltnis?: Verhaeltnis
   beliebtheit: number
   anzahlBewertungen: number
+  attribute: Attribute
   tags: string[]
 }
