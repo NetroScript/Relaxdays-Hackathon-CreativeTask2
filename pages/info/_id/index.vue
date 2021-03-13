@@ -111,7 +111,7 @@
             icon
             v-bind="attrs"
             v-on="on"
-            @click="window.location.href = '/'"
+            @click="$router.push('/')"
             ><v-icon>mdi-home</v-icon></v-btn
           >
         </template>

@@ -39,6 +39,7 @@
             <div>
               <v-rating
                 color="#FFD740"
+                background-color="#FFD740"
                 half-increments
                 dense
                 class="d-inline-block"
@@ -53,29 +54,6 @@
               >
                 ({{ geschenk.anzahlBewertungen }})
               </div>
-            </div>
-
-            <div v-if="geschenk.schwierigkeit !== undefined">
-              <v-tooltip top>
-                <template #activator="{ on, attrs }">
-                  <div v-bind="attrs" v-on="on">
-                    <v-rating
-                      color="#EF5350"
-                      background-color="#EF5350"
-                      half-increments
-                      dense
-                      class="d-inline-block"
-                      readonly
-                      half-icon="mdi-circle-half-full"
-                      full-icon="mdi-circle"
-                      empty-icon="mdi-circle-outline"
-                      length="5"
-                      :value="geschenk.schwierigkeit * 5"
-                    />
-                  </div>
-                </template>
-                <span>Schwierigkeit</span>
-              </v-tooltip>
             </div>
           </v-row>
         </v-img>

@@ -236,11 +236,7 @@ export default class IndexPage extends Vue {
       })
     }
 
-    console.log(query)
-
     geschenkeQuery.where(query)
-
-    console.log(geschenkeQuery)
 
     const geschenke = (await geschenkeQuery
       .limit(this.currentFilters.pageSize)
