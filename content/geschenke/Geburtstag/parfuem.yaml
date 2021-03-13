@@ -1,0 +1,19 @@
+---
+name: Edles Parfüm
+internalID: edles-parfuem
+details: Ein klassisches Geschenk mit dem man nicht viel falsch machen kann. Das ist etwas, was man sich einmal im Jahr leisten kann.
+vorschauBilder:
+  - https://loremflickr.com/800/400/perfume,fragrance/all
+anlass:
+  - Geburtstag
+preis: 74.99
+beliebtheit: 4.2
+anzahlBewertungen: 13
+attribute:
+  lustig: 0.0
+  romantisch: 0.3
+  edel: 0.8
+  besonders: 0.2
+  nuetzlich: 0.4
+tags:
+  - Körperpflege

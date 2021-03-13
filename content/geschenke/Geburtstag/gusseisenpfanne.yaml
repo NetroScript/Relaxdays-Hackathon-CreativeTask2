@@ -1,0 +1,22 @@
+---
+name: Gusseisen-Pfanne
+internalID: gusseisenpfanne
+details: Das perfekte Werkzeug für die Küche, über das sich jeder Koch freut. Man kann nie genug Pfannen haben und sie halten auch lange.
+vorschauBilder:
+  - https://loremflickr.com/800/400/skillet
+anlass:
+  - Muttertag
+  - Geburtstag
+preis: 50
+beliebtheit: 4.5
+anzahlBewertungen: 47
+attribute:
+  lustig: 0.0
+  romantisch: 0.0
+  edel: 0.1
+  besonders: 0.4
+  nuetzlich: 1.0
+tags:
+  - Kochen
+  - Küche
+  - langlebig

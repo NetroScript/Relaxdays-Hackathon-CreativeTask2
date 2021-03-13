@@ -1,0 +1,20 @@
+---
+name: Wollsocken
+internalID: woll-socken
+details: Gut um im Winter und Herbst warm zu bleiben, insbesondere mit echter Schafswolle. Passt jedoch auf für jede Jahreszeit.
+vorschauBilder:
+  - https://loremflickr.com/800/400/sock,wool/all
+anlass:
+  - Geburt
+  - Geburtstag
+preis: 10
+beliebtheit: 4.0
+anzahlBewertungen: 177
+attribute:
+  lustig: 0.0
+  romantisch: 0.0
+  edel: 0.0
+  besonders: 0.4
+  nuetzlich: 1.0
+tags:
+  - Kleidung

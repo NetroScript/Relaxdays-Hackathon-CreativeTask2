@@ -1,0 +1,21 @@
+---
+name: "Buch: Das Sexleben nach 45"
+internalID: buch-sexleben-45
+details: Ein spaßiges Geschenk für deine Freunde. Das Buch bietet eine authentische Außenseite, der Inhalt sind jedoch 300 leere Seiten.
+vorschauBilder:
+  - https://loremflickr.com/800/400/books,shelf/all
+anlass:
+  - Geburtstag
+preis: 18.99
+empfaengerAlter: 45-59
+beliebtheit: 0.8
+anzahlBewertungen: 24
+attribute:
+  lustig: 0.9
+  romantisch: 0.0
+  edel: 0.0
+  besonders: 0.2
+  nuetzlich: 0.0
+tags:
+  - Buch
+  - Spaß

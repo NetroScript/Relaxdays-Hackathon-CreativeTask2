@@ -1,0 +1,25 @@
+---
+name: Japan Reise für zwei
+internalID: japan-reise
+details: Die perfekte Reise, bei der man 3 Wochen lang gemeinsam im Paradis verbringen kann. Erkunde eine vielzahl von Weltkulturerben.
+vorschauBilder:
+  - https://loremflickr.com/800/400/japan,temple/all
+  - https://loremflickr.com/800/401/japan,travel/all
+  - https://loremflickr.com/800/402/japan,temple/all
+  - https://loremflickr.com/800/403/japan,temple/all
+anlass:
+  - Jubiläum
+preis: 4500
+beliebtheit: 4.8
+verhaeltnis: Partner
+anzahlBewertungen: 3
+attribute:
+  lustig: 0.0
+  romantisch: 0.7
+  edel: 0.8
+  besonders: 0.8
+  nuetzlich: 0.2
+tags:
+  - Urlaub
+  - Reise
+  - Ausland

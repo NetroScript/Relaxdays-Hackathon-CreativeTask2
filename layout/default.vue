@@ -1,5 +1,6 @@
 <template>
   <v-app dark>
+    <slot name="drawer"></slot>
     <v-app-bar clipped-left fixed app color="primary">
       <v-btn dark icon @click="toggleTheme">
         <v-icon>{{
@@ -15,6 +16,7 @@
       />
       <slot name="header"></slot>
     </v-app-bar>
+    <slot name="before-content"></slot>
     <v-main>
       <v-container>
         <slot name="content"></slot>
@@ -49,7 +51,7 @@ export default class MainLayout extends Vue {
   mounted() {
     const theme = this.$cookies.get('darkMode', { parseJSON: false })
     if (theme !== undefined) {
-      this.$vuetify.theme.dark = theme == 'true'
+      this.$vuetify.theme.dark = theme === 'true'
     }
   }
 }

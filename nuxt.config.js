@@ -55,7 +55,24 @@ export default {
   router: { middleware: 'theme' },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    // Only search in title and description
+    fullTextSearchFields: [
+      'title',
+      'description',
+      'slug',
+      'text',
+      'details',
+      'name',
+    ],
+    nestedProperties: [
+      'attribute.lustig',
+      'attribute.romantisch',
+      'attribute.edel',
+      'attribute.besonders',
+      'attribute.nuetzlich',
+    ],
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

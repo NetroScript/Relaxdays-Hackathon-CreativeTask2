@@ -132,18 +132,21 @@ import MainLayout from '~/layout/default.vue'
   components: { MainLayout },
 })
 export default class IndexPage extends Vue {
-  geschenk: Geschenk
+  geschenk!: Geschenk
 
   // Load the data from the server on page load
   async asyncData({ $content, route, error }: Context) {
     let geschenk: Geschenk
 
     try {
-      geschenk = (
-        await $content('', { deep: true })
-          .where({ internalID: route.params.id })
-          .fetch<Geschenk>()
-      )[0]
+      const data = await $content('', { deep: true })
+        .where({ internalID: route.params.id })
+        .fetch<Geschenk>()
+      if (Array.isArray(data)) {
+        geschenk = data[0]
+      } else {
+        geschenk = data
+      }
     } catch (e) {
       error({ statusCode: 418, message: 'ERROR.UNKNOWN' })
       return {}

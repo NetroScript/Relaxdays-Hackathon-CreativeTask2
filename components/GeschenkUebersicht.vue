@@ -20,7 +20,7 @@
     >
       <v-row no-gutters>
         <v-img
-          :src="geschenk.vorschauBilder"
+          :src="geschenk.vorschauBilder[0]"
           class="rounded-lg grey lighten-1 align-end elevation-2"
           height="280px"
           width="100%"

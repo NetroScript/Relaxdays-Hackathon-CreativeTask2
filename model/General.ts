@@ -1,5 +1,4 @@
 export enum Anlass {
-  'Sonstiges' = 'Sonstiges',
   'Geburtstag' = 'Geburtstag',
   'Weihnachten' = 'Weihnachten',
   'Promotion' = 'Promotion',
@@ -35,6 +34,7 @@ export enum EmpfaengerVerfeinerung {
 export enum Verhaeltnis {
   Freund = 'Freund',
   Paar = 'Paar',
+  Partner = 'Partner',
   Bekannter = 'Bekannter',
   Schwager = 'Schwager',
   Mutter = 'Mutter',
@@ -58,7 +58,6 @@ export interface Geschenk {
   vorschauBilder: string[]
   anlass: Anlass[]
   preis: number | null
-  schwierigkeit?: number
   empfaengerAlter?: Empfaenger
   verfeinerung?: EmpfaengerVerfeinerung
   verhaeltnis?: Verhaeltnis
@@ -66,4 +65,22 @@ export interface Geschenk {
   anzahlBewertungen: number
   attribute: Attribute
   tags: string[]
+}
+
+export interface GeschenkFilter {
+  keyword: string
+  anlass?: Anlass
+  preis: [number, number]
+  alter?: Empfaenger
+  verfeinerung?: EmpfaengerVerfeinerung
+  verhaeltnis?: Verhaeltnis
+  beliebtheit?: number
+  lustig: [number, number]
+  romantisch: [number, number]
+  edel: [number, number]
+  besonders: [number, number]
+  nuetzlich: [number, number]
+  ascending: boolean
+  order: number
+  pageSize: number
 }

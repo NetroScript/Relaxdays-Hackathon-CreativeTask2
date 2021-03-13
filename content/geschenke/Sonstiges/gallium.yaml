@@ -1,0 +1,21 @@
+---
+name: Gallium
+internalID: gallium
+details: Ein interessantes Chemie Experiment bei den man bestaunen darf, wie Metall direkt in der Hand schmilzt.
+vorschauBilder:
+  - https://loremflickr.com/800/400/gallium,hand/all
+anlass:
+  - Geburtstag
+empfaengerAlter: Jugendlicher
+preis: 24.99
+beliebtheit: 5.0
+anzahlBewertungen: 83
+attribute:
+  lustig: 0.1
+  romantisch: 0.0
+  edel: 0.2
+  besonders: 0.8
+  nuetzlich: 0.0
+tags:
+  - Experiment
+  - Chemie
