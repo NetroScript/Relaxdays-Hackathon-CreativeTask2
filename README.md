@@ -1,4 +1,4 @@
-# Relaydays-Hackathon-CreativeTask1
+# Relaxdays-Hackathon-CreativeTask2
 
 This project was created in the Relaxdays Code Challenge Vol. 1. 
 See sites.google.com/relaxdays.de/hackathon-relaxdays/startseite for more information.
@@ -10,7 +10,7 @@ This is an app (website) to suggest gift ideas to the user.
 It is built using TypeScript, Vue and Nuxt.
 Because it was created during a Hackathon the code might not always be optimal.
 
-**You can find a demo video for the application [here](https://cloud.enostrion.com/index.php/s/ZaHKFFS9beYQrEq).**   
+**You can find a demo video for the application [here](https://cloud.enostrion.com/index.php/s/ZaHKFFS9beYQrEq) (in german).**   
 
 ## Build Setup - No Docker
 
@@ -36,8 +36,8 @@ $ yarn generate
 Get a running version of this code using the following commands:
 
 ```bash
-git clone https://github.com/NetroScript/Relaydays-Hackathon-CreativeTask1.git
-cd Relaydays-Hackathon-CreativeTask1
+git clone https://github.com/NetroScript/Relaxdays-Hackathon-CreativeTask2.git
+cd Relaxdays-Hackathon-CreativeTask2
 docker build -t geschenkeinspirator .
 docker run -v $(pwd)/content:/usr/src/app/content -p 3000:3000 -it geschenkeinspirator
 ```
@@ -45,8 +45,8 @@ docker run -v $(pwd)/content:/usr/src/app/content -p 3000:3000 -it geschenkeinsp
 or if you have docker compose
 
 ```bash
-git clone https://github.com/NetroScript/Relaydays-Hackathon-CreativeTask1.git
-cd Relaydays-Hackathon-CreativeTask1
+git clone https://github.com/NetroScript/Relaxdays-Hackathon-CreativeTask2.git
+cd Relaxdays-Hackathon-CreativeTask2
 docker-compose up
 ```
 
